@@ -1,5 +1,7 @@
 from module_a import module_name
 
+x = 0
+
 
 def echo(phrase: str) -> None:
     """A dummy wrapper around print."""
