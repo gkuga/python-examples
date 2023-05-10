@@ -5,6 +5,8 @@ from functools import partial
 
 def func(i):
     sleep(1)
+    if i == 2:
+        raise "error"
     print(f"{i}\n", flush=True, end="")
 
 
@@ -46,3 +48,10 @@ with ThreadPoolExecutor(max_workers=3) as executor:
         executor.submit(
             partial(func, i)
         )
+
+print('迷走4&result()')
+with ThreadPoolExecutor(max_workers=3) as executor:
+    for i in range(5):
+        executor.submit(
+            partial(func, i)
+        ).result()
