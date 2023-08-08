@@ -1,14 +1,5 @@
 from module_a import module_name
 
-x = 0
-
-
-def echo(phrase: str) -> None:
-    """A dummy wrapper around print."""
-    # for demonstration purposes, you can imagine that there is some
-    # valuable and reusable logic inside this function
-    print(phrase)
-
 
 def main() -> int:
     print(f'This module name is {__name__}.')
