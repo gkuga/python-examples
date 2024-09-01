@@ -7,3 +7,9 @@ pyright:
 
 mypy:
 	pipenv run mypy
+
+install:
+	pipenv install --dev
+
+rm:
+	pipenv --rm
