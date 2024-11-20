@@ -13,3 +13,6 @@ print(matrix[:, 1])
 print(matrix[:2, 1:])
 print(matrix[[0, 2], [1, 3]])
 print(matrix[[[0], [2]], [[1], [3]]])
+
+print(list(range(3, 10)))
+print(np.arange(3, 10))
