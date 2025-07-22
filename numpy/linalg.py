@@ -27,3 +27,5 @@ norm_1 = np.linalg.norm(vec, ord=1)
 norm_inf = np.linalg.norm(vec, ord=np.inf)
 print("1-ノルム:", norm_1)
 print("無限大ノルム:", norm_inf)
+
+print("ベクトルの差のノルム:", np.linalg.norm(np.array([1,2])-np.array([4,6])))
