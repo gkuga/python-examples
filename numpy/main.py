@@ -22,6 +22,8 @@ print(matrix[[[0], [2]], [[1], [3]]])
 print(list(range(3, 10)))
 print(np.arange(3, 10))
 
+print('-------------------')
+
 # 1次元のndarrayを作成
 a = np.array([1, 2, 3])
 print("1次元配列 a:")
@@ -45,3 +47,20 @@ print(a + 10)
 
 print("\nb の転置:")
 print(b.T)
+
+print('-------------------')
+
+# 2×2 行列
+A = np.array([[1, 2],
+              [3, 4]])
+print(f"A.shape: {A.shape}")  # (2, 2)
+
+# 2×1 列ベクトル
+x = np.array([[5],
+              [6]])
+print(f"x.shape: {x.shape}")  # (2, 1)
+
+# 行列とベクトルの積
+result1 = A @ x
+print(f"A @ x =\n{result1}")
+print(f"結果の形状: {result1.shape}")  # (2, 1)
