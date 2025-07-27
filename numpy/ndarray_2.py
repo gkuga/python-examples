@@ -22,3 +22,13 @@ print("window:\n", window)
 # 各送信機ごとに最大値を計算
 max_rssi = np.max(window, axis=0)
 print("max_rssi:", max_rssi)
+
+# スライス構文の例
+example = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print("\n--- exampleのスライス構文例 ---")
+print("example:\n", example)
+print("1行目:", example[0])
+print("2列目:", example[:, 1])
+print("左上2x2:", example[:2, :2])
+print("逆順（行）:", example[::-1])
+print("逆順（列）:", example[:, ::-1])
