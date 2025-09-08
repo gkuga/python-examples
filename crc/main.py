@@ -18,8 +18,8 @@ def calc_crc(data: bytes) -> int:
 
 
 # CRC Target Data
-data = bytes([0x03, 0x11, 0x00])
+data = bytes([0x02, 0xa1, 0x00])
 
 crc = calc_crc(data)
 
-print(f"CRC (hex): {crc:04x}")  # Expects 8d90
+print(f"CRC (hex): {crc:04x}")  # Expects a9 90
